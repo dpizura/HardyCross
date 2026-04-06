@@ -1,5 +1,7 @@
 node_given_flows = [2.77574, -1.215614, -1.215613, -1.52334, 2.39444, -1.215613]
 
+
+
 #Node A
 pipe1_flow = -1.3
 pipe2_flow = -1*(node_given_flows[1] + pipe1_flow)
@@ -11,4 +13,5 @@ pipe5_flow = - 1.3
 nodeD_flow_sum = -1 * node_given_flows[3] - pipe5_flow + pipe1_flow
 print(nodeD_flow_sum)
 
-  
+def head_loss(r, Q, n):
+
