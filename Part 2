@@ -1,17 +1,11 @@
-node_given_flows = [2.77574, -1.215614, -1.215613, -1.52334, 2.39444, -1.215613]
+#Assigning initial values through dictionaries
+pipe_1_data = {
+  "length": 1500,
+  "diameter": 0.8333
+  "e/D": 120
+}
 
-
-
-#Node A
-pipe1_flow = -1.3
-pipe2_flow = -1*(node_given_flows[1] + pipe1_flow)
-nodeA_flow_sum = node_given_flows[1] + pipe1_flow + pipe2_flow
-print(nodeA_flow_sum)
-
-#Node D
-pipe5_flow = - 1.3
-nodeD_flow_sum = -1 * node_given_flows[3] - pipe5_flow + pipe1_flow
-print(nodeD_flow_sum)
-
-def head_loss(r, Q, n):
-
+node_A_data = {
+  "flow in": 4.304967335
+  "elevation": 155
+}
